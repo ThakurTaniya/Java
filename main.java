@@ -1,7 +1,10 @@
 public class main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
+   public main() {
+   }
+
+   public static void main(String[] var0) {
+      System.out.println("Hello, World!");
+   }
 }
 
 
