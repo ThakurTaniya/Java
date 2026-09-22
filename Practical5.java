@@ -1,51 +1,20 @@
-// Program 4: WAP to demonstrate the use of arithmetic, assignment, comparison, logical, and bitwise operators. Display the result of each operation.
+// Program 5 – WAP to take two integers and display their sum.
 
-public class Practical5{
+import java.util.Scanner;
+
+public class Practical5 {
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = 5;
+        Scanner sc = new Scanner(System.in);
 
-        // Arithmetic operators
-        System.out.println("Arithmetic Operators:");
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
-        System.out.println("Modulus: " + (a % b));
+        System.out.print("Enter first integer: ");
+        int a = sc.nextInt();
 
-        // Assignment operators
-        int c = a;
-        System.out.println("\nAssignment Operators:");
-        c += b;
-        System.out.println("c += b: " + c);
-        c -= b;
-        System.out.println("c -= b: " + c);
-        c *= b;
-        System.out.println("c *= b: " + c);
-        c /= b;
-        System.out.println("c /= b: " + c);
+        System.out.print("Enter second integer: ");
+        int b = sc.nextInt();
 
-        // Comparison operators
-        System.out.println("\nComparison Operators:");
-        System.out.println("a == b: " + (a == b));
-        System.out.println("a != b: " + (a != b));
-        System.out.println("a > b: " + (a > b));
-        System.out.println("a < b: " + (a < b));
-        System.out.println("a >= b: " + (a >= b));
-        System.out.println("a <= b: " + (a <= b));
+        int sum = a + b;
 
-        // Logical operators
-        System.out.println("\nLogical Operators:");
-        System.out.println("(a > b) && (a > 0): " + ((a > b) && (a > 0)));
-        System.out.println("(a > b) || (a < 0): " + ((a > b) || (a < 0)));
-        System.out.println("!(a > b): " + (!(a > b)));
-
-        // Bitwise operators
-        System.out.println("\nBitwise Operators:");
-        System.out.println("a & b: " + (a & b));
-        System.out.println("a | b: " + (a | b));
-        System.out.println("a ^ b: " + (a ^ b));
-        System.out.println("~a: " + (~a));
+        System.out.println("Sum = " + sum);
     }
 }
